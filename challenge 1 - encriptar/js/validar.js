@@ -1,5 +1,5 @@
 function validarTexto(texto){
-    var reglaValidacion = new RegExp("[°!$%&/()=?¡'¿áéíóúÁÉÍÓÚ]|[0-9]","g");
+    var reglaValidacion = new RegExp("[°!$%&/()=?¡'¿áéíóúÁÉÍÓÚ]|]","g");
     var ingresado = texto.value;
 
     if (ingresado==""){
@@ -11,7 +11,7 @@ function validarTexto(texto){
             return true;
         }
         else{
-            alert("No se pueden ingresar letras con acentos, números ni caracteres especiales");
+            alert("No se pueden ingresar letras con acentos");
             return false;
         }
     }
