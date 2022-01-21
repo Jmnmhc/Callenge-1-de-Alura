@@ -1,5 +1,5 @@
 function validarTexto(texto){
-    var reglaValidacion = new RegExp("[°!$%&/()=?¡'¿áéíóúÁÉÍÓÚ]|]","g");
+    var reglaValidacion = new RegExp("[áéíóúÁÉÍÓÚ]","g");
     var ingresado = texto.value;
 
     if (ingresado==""){
